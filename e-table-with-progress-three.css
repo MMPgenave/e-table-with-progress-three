@@ -16,7 +16,7 @@
   /* height: 40px; */
   display: flex;
   align-items: center;
-  padding: 0rem 1rem;
+  padding: 0.2rem 1rem;
   text-align: center;
   color: #444;
   font-family: Yekan Bakh;
@@ -55,7 +55,7 @@
   /* height: 40px; */
   display: flex;
   align-items: center;
-  padding: 0rem 1rem;
+  padding: 0.4rem 1rem;
   color: #444;
   text-align: center;
   font-family: Yekan Bakh;
@@ -100,7 +100,7 @@
   .verticalDashedLineTYPE1
   > div {
   width: 20%;
-  border-left: var(--verticalDashedLine-color) dashed 1px;
+  border-left: var(--verticalDashedLine-color) dashed 2px;
 }
 
 .e-table-with-progress-three
@@ -126,7 +126,7 @@
   .verticalDashedLineTYPE2
   > div {
   width: 20%;
-  border-left: var(--verticalDashedLine-color) dashed 1px;
+  border-left: var(--verticalDashedLine-color) dashed 2px;
 }
 
 .e-table-with-progress-three
@@ -168,4 +168,14 @@
 }
 [dir="rtl"] .e-table-with-progress-three .header > div:first-child {
   text-align: right;
+}
+
+
+[dir="rtl"] .e-table-with-progress-three
+.row
+> div:last-child
+.verticalDashedLineTYPE2
+ {
+  flex-direction: row-reverse;
+
 }
