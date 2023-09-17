@@ -49,8 +49,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-left: var(--verticalDashedLine-color) dashed 2px;
+  border-right: none;
 }
 
+.e-table-with-progress-three .no-border{
+  border-left: none !important;
+}
 .e-table-with-progress-three .row {
   /* height: 40px; */
   display: flex;
@@ -170,7 +175,6 @@
   text-align: right;
 }
 
-
 [dir="rtl"] .e-table-with-progress-three
 .row
 > div:last-child
@@ -178,4 +182,17 @@
  {
   flex-direction: row-reverse;
 
+}
+
+
+
+    
+[dir="rtl"] .e-table-with-progress-three .header > div:nth-child(3) > div {
+  border-left:none ;
+  border-right: var(--verticalDashedLine-color) dashed 2px;
+}
+
+
+[dir="rtl"]  .e-table-with-progress-three .no-border{
+  border-right: none !important;
 }
